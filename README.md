@@ -44,17 +44,17 @@ source install/setup.bash
 ## Run（QoS切替）
 ### Reliable:
 ```bash
-ros2 launch topic_qos_playground_py demo.launch.py reliable:=true depth:=10
+ros2 launch topic_qos_playground_py demo.launch.py reliable:=true
 ```
 ### Best effort:
 ```bash
-ros2 launch topic_qos_playground_py demo.launch.py reliable:=false depth:=10
+ros2 launch topic_qos_playground_py demo.launch.py reliable:=false
 ```
 ## インタフェース / Interfaces
 ### Nodes
-- `qos_talker_py` 
+- `talker_py` 
   Publishes `std_msgs/msg/String`
-- `qos_listener_py` 
+- `listener_py` 
   Subscribes `std_msgs/msg/String`
 
 ### Topics
